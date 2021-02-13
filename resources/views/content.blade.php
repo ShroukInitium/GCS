@@ -100,6 +100,7 @@
         1
     </div>
     <div class="tab-pane fade" id="nav-downloads" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <a href="http://example.com/files/myfile.pdf" target="_blank">Download</a>
 
         <a href="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" download>
             file to download
@@ -110,6 +111,7 @@
         <a href="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" download>
             file to download
         </a>
+
     </div>
     <div class="tab-pane fade" id="nav-comments" role="tabpanel" aria-labelledby="nav-contact-tab">
         <div class="lesson-page text-right">
@@ -130,7 +132,7 @@
                             <p>منذ 9 أشهر</p>
                         </div>
                     </div>
-                   
+
                     <div class="comment-text">ADADA</div>
                 </div>
                 <div class="comment-box" id="comment-1584">

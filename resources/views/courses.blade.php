@@ -19,62 +19,99 @@
 </head>
 
 <body>
-  <div class="container">
-    <div id="header" class="header">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
+  <div id="header" class="header">
+    <nav class="navbar navbar-expand-lg  bg-light">
+      <!-- <a class="navbar-brand" href="#">
           <img src="https://www.coursat.org/images/logo.png" alt="كورسات">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown open">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true"><i class="fa fa-th-large"></i> التصنيفات <span class="caret"></span></a>
-              <ul class="dropdown-menu categories-menu" role="menu">
-                <li>
-                  <a href="#">
-                    لغات </a>
-                </li>
-                <li>
-                  <a href="#">
-                    شبكات الحاسوب </a>
-                </li>
-                <li>
-                  <a href="#">
-                    أمن المعلومات </a>
-                </li>
-                <li>
-                  <a href="#">
-                    قواعد بيانات </a>
-                </li>
-                <li>
-                  <a href="#">
-                    أنظمة تشغيل </a>
-                </li>
-                <li>
-                  <a href="#">
-                    تطوير الويب </a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <!-- <a class="nav-link" href="#">الرئيسية <span class="sr-only">(current)</span></a> -->
-              <a href="#" class="sign-up">
-                <i class="fa fa-user-plus"></i>
-                تسجيل
-              </a>
-            </li>
-            <li class="nav-item">
-              <!-- <a class="nav-link" href="#">كورسات</a> -->
-              <a href="{{url('login')}}" class="sign-in"><i class="fa fa-lock"></i> دخول</a>
-            </li>
-          </ul>
+        </a> -->
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">E-Learning</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown open">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true"><i class="fa fa-th-large"></i> التصنيفات <span class="caret"></span></a>
+            <ul class="dropdown-menu categories-menu" role="menu">
+              <li>
+                <a href="#">
+                  لغات </a>
+              </li>
+              <li>
+                <a href="#">
+                  شبكات الحاسوب </a>
+              </li>
+              <li>
+                <a href="#">
+                  أمن المعلومات </a>
+              </li>
+              <li>
+                <a href="#">
+                  قواعد بيانات </a>
+              </li>
+              <li>
+                <a href="#">
+                  أنظمة تشغيل </a>
+              </li>
+              <li>
+                <a href="#">
+                  تطوير الويب </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="#">الرئيسية <span class="sr-only">(current)</span></a> -->
+            <a href="#" class="sign-up">
+              <i class="fa fa-user-plus"></i>
+              تسجيل
+            </a>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="#">كورسات</a> -->
+            <a href="{{url('login')}}" class="sign-in"><i class="fa fa-lock"></i> دخول</a>
+          </li>
+
+
+        </ul>
+      </div>
+    </nav>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 text-right" id="mainNav">
+        <div class="container">
+          <a class="navbar-brand js-scroll-trigger" href="#page-top">E-Learning</a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav mr-auto my-2 my-lg-0 ">
+              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">عن ELearning</a></li> 
+              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">التصنيفات</a></li>
+              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li> 
+              <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">تواصل معنا</a></li>
+
+            </ul>
+            <ul class="navbar-nav ml-auto my-2 my-lg-0">
+
+              <li class="nav-item">
+                <a href="{{url('login')}}" class="sign-up nav-link js-scroll-trigger">
+                  <i class="fa fa-user-plus"></i>
+                  تسجيل
+                </a>
+              </li>
+              <li class="nav-item">
+               <a class="nav-link" href="#">كورسات</a> 
+                <a href="{{url('login')}}" class="sign-in nav-link js-scroll-trigger">
+                  <i class="fa fa-lock"></i>
+                  دخول
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </nav>
-    </div>
+      </nav> -->
+  </div>
+  <div class="container">
+   
     <div id="description">
       <div class="row">
 
@@ -337,6 +374,7 @@
 
 
 
+       $('#content').load('getLinks');
 
       window.refresh_links = function() {
 

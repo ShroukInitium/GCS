@@ -111,7 +111,7 @@
       </nav> -->
   </div>
   <div class="container">
-   
+
     <div id="description">
       <div class="row">
 
@@ -354,14 +354,18 @@
     <!-- </div> -->
 
 
-    <div id="footer" class="footer">
+    <!-- <div id="footer" class="footer">
       <p>Footer</p>
-    </div>
+    </div> -->
 
 
 
   </div>
-
+  <footer class="bg-light py-5">
+    <div class="container">
+      <div class="small text-center text-muted">Copyright © 2021 </div>
+    </div>
+  </footer>
   <script type="text/javascript">
     $(document).ready(function() {
       // $('.navbar-collapse a').click(function() {
@@ -374,7 +378,7 @@
 
 
 
-       $('#content').load('getLinks');
+      $('#content').load('getLinks');
 
       window.refresh_links = function() {
 

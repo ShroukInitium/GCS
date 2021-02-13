@@ -33,7 +33,7 @@
             <div class="col-md-12">
               <div class="form-block">
                   <div class="mb-4">
-                  <h3>Sign In to <strong>Eleaening </strong></h3>
+                  <h3>Sign In to <strong>Elearning </strong></h3>
                   <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p>
                 </div>
                 <form action="{{url('/')}}" method="get">

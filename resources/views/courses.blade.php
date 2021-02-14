@@ -116,7 +116,7 @@
       <div class="row">
 
         <div class="col-md-12">
-          <h3>1- المقدمة</h3>
+          <h3 id="lesson_name">1- المقدمة</h3>
 
           <ul class="page-meta">
             <li data-toggle="tooltip" data-placement="top" title="" data-original-title="ترتيب الدرس">
@@ -157,15 +157,22 @@
 
               <div class="container">
                 <label class="row">
+                  <input onclick="refresh_links()" type="radio" class="option-input radio lesson_choice" name="example" 
+                  value="المقدمة" />
+                  المقدمة
+                </label>
+                <!-- <label class="row">
                   <input onclick="refresh_links()" type="radio" class="option-input radio" name="example" />
                   <a onclick="refresh_links()" href="#">المقدمة</a>
-                </label>
+                </label> -->
                 <label class="row">
-                  <input onclick="refresh_links()" type="radio" class="option-input radio" name="example" />
+                  <input onclick="refresh_links()" type="radio" class="option-input radio lesson_choice" name="example"
+                   value="المتطلبات" />
                   المتطلبات
                 </label>
                 <label class="row">
-                  <input onclick="refresh_links()" type="radio" class="option-input radio" name="example" />
+                  <input onclick="refresh_links()" type="radio" class="option-input radio lesson_choice" name="example"
+                  value="الحلول" />
                   الحلول
                 </label>
               </div>
@@ -185,7 +192,7 @@
               <h5 class="mb-0 text-center">
                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   الدرس الثاني
-                  <spin class="circle-icon mr-4">2</spin>
+                  <!-- <spin class="circle-icon mr-4">2</spin> -->
                 </button>
               </h5>
             </div>
@@ -193,15 +200,18 @@
 
               <div class="container">
                 <label class="row">
-                  <input onclick="refresh_links()" type="radio" class="option-input radio" name="example" />
-                  <a onclick="refresh_links()" href="#">ابحث عن الأمور التي تثير الفضول</a>
+                  <input onclick="refresh_links()" type="radio" class="option-input radio lesson_choice" name="example"
+                   value="ابحث عن الأمور التي تثير الفضول"/>
+                  ابحث عن الأمور التي تثير الفضول
                 </label>
                 <label class="row">
-                  <input onclick="refresh_links()" type="radio" class="option-input radio" name="example" />
+                  <input onclick="refresh_links()" type="radio" class="option-input radio lesson_choice"
+                  value="المتطلبات" name="example" />
                   المتطلبات
                 </label>
                 <label class="row">
-                  <input onclick="refresh_links()" type="radio" class="option-input radio" name="example" />
+                  <input onclick="refresh_links()" type="radio" class="option-input radio lesson_choice" 
+                  value="الحلول" name="example" />
                   الحلول
                 </label>
               </div>
@@ -226,22 +236,25 @@
               <h5 class="mb-0 text-center">
                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                   الدرس الثالث
-                  <spin class="circle-icon mr-4">3</spin>
+                  <!-- <spin class="circle-icon mr-4">3</spin> -->
                 </button>
               </h5>
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
               <div class="container">
                 <label class="row">
-                  <input onclick="refresh_links()" type="radio" class="option-input radio" name="example" />
-                  <a onclick="refresh_links()" href="#">ابحث عن الأمور التي تثير الفضول</a>
+                  <input onclick="refresh_links()" type="radio" class="option-input radio lesson_choice" 
+                  name="example" value="ابحث عن الأمور التي تثير الفضول"/>
+                  ابحث عن الأمور التي تثير الفضول
                 </label>
                 <label class="row">
-                  <input onclick="refresh_links()" type="radio" class="option-input radio" name="example" />
+                  <input onclick="refresh_links()" type="radio" class="option-input radio lesson_choice" 
+                  name="example" value="المتطلبات"/>
                   المتطلبات
                 </label>
                 <label class="row">
-                  <input onclick="refresh_links()" type="radio" class="option-input radio" name="example" />
+                  <input onclick="refresh_links()" type="radio" class="option-input radio lesson_choice" 
+                  value="الحلول" name="example" />
                   الحلول
                 </label>
               </div>
@@ -375,17 +388,22 @@
 
       //   $('#content').load('content.php');
       // });
+      jQuery('.lesson_choice').click(function() {
+        var fired_button = $(this).attr("value");
+        document.getElementById('lesson_name').innerHTML = fired_button;
+      });
+    
+  
 
 
+    $('#content').load('getLinks');
 
-      $('#content').load('getLinks');
+    window.refresh_links = function() {
 
-      window.refresh_links = function() {
-
-        $.get('/getLinks', function(data) {
-          document.getElementById('links_container').innerHTML = data;
-        })
-      }
+    $.get('/getLinks', function(data) {
+      document.getElementById('links_container').innerHTML = data;
+    })
+    }
 
     })
   </script>
